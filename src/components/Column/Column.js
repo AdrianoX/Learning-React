@@ -5,7 +5,6 @@ import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon.js';
-// import list from './List/List.js';   <- check later
 
 
 class Column extends React.Component {
@@ -19,7 +18,6 @@ class Column extends React.Component {
     icon: PropTypes.node,
     addCard: PropTypes.func,
     name: PropTypes.node,
-    // children ?
   }
 
   static defaultProps = {
@@ -48,7 +46,7 @@ class Column extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>{this.props.title}
           <span className={styles.icon}>
-            <Icon name={this.props.icon} />  /* issues ? */
+            <Icon name={this.props.icon} /> 
           </span>
         </h3>
         <div className={styles.cards}>

@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './Hero.scss';
 import PropTypes from "prop-types";
 import ReactHtmlParser from 'react-html-parser';
-// import Creator from '../Creator/Creator.js';  <-- probably not useful 
-
 
   
 const Hero = props => (
