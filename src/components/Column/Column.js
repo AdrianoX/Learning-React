@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Column.scss";
+import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
@@ -18,6 +18,7 @@ class Column extends React.Component {
     icon: PropTypes.node,
     addCard: PropTypes.func,
     name: PropTypes.node,
+    title: PropTypes.node,
   }
 
   static defaultProps = {
@@ -33,9 +34,9 @@ class Column extends React.Component {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
