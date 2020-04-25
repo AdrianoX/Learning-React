@@ -16,7 +16,6 @@ const createActionName = name => `app/${reducerName}/${name}`;
 // actions types
 export const CHANGE = createActionName('CHANGE');
 // action creators
-// export const createActionChange = payload => ({ payload: { ...payload, id: shortid.generate() }, type: CHANGE}); <- previous version, still ok
 export const createAction_changeSearchString = payload => ({ payload, type: CHANGE });
 
 // reducer

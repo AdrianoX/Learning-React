@@ -22,9 +22,6 @@ class App extends React.Component {
         {lists.map((listData) => (
           <List key={listData.id} {...listData} />
         ))}
-        {/*
-            <List {...listData} />
-            */}
       </main>
     );
   }
