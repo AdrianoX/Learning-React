@@ -2,19 +2,16 @@ import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
-import Creator from '../Creator/Creator';   /* import Creator from '../Creator/Creator.js'; */
+import Creator from '../Creator/Creator';  
 import { settings } from '../../data/dataStore';
-import Icon from '../Icon/Icon';   /*import Icon from '../Icon/Icon.js'; */
-// import ReactHtmlParser from 'react-html-parser';
+import Icon from '../Icon/Icon';  
+
 
 
 class Column extends React.Component {
 
-  //   state = {
-  //     cards: this.props.cards || [],
-  //   }
+
   static propTypes = {
-    // cardTitle: PropTypes.string,
     cards: PropTypes.array,
     icon: PropTypes.node,
     addCard: PropTypes.func,   
