@@ -10,6 +10,11 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+
+  header: {          /* <----  Correct saving of state? or try different one ? */
+    icon: 'robot',
+  },
+
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -17,6 +22,22 @@ export const settings = {
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+};
+
+export const homeContents =   {
+  title: 'Home',
+};
+
+export const infoContents =   {
+  title: 'Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  textSample: 'Everything what you need to know about app',
+};
+
+export const faqContents =   {
+  title: 'FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  textSample: 'Type keywords to find answers',
 };
 
 export const listData = {
