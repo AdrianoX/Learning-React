@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container.js';
+import {withRouter} from 'react-router';
 
 class Search extends React.Component {
   static propTypes = {
@@ -13,6 +14,7 @@ class Search extends React.Component {
     changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
+    history: PropTypes.object,
   }
 
   static defaultProps = {
@@ -31,7 +33,8 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    this.props.changeSearchString(this.state.value);
+    // this.props.changeSearchString(this.state.value);
+    this.props.history.push(`/search/${this.state.value}`);
   }
 
   componentDidUpdate(prevProps){
@@ -41,28 +44,30 @@ class Search extends React.Component {
   }
 
   render() {
-    const {text, countVisible, countAll} = this.props;
-    const {value} = this.state;
-    const {icon} = settings.search;
+    const { text, countVisible, countAll } = this.props;
+    const { value } = this.state;
+    const { icon } = settings.search;
     return (
-      <div className={styles.component}>
-        <Container>  {/* <--- SH not OiTE*/}
-          <input
-            type='text'
-            placeholder={text}
-            value={value}
-            onChange={event => this.handleChange(event)}
-          />
-          <div className={styles.buttons}>
-            <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
+      <section >
+        <Container >
+          <div className={styles.component}>
+            <input
+              type='text'
+              placeholder={text}
+              value={value}
+              onChange={event => this.handleChange(event)}
+            />
+            <div className={styles.buttons}>
+              <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
+            </div>
+            <div>
+              {countVisible == countAll ? '' : `${countVisible} / ${countAll}`}
+            </div>
           </div>
-          <div>
-            { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
-          </div>
-        </Container>  {/* <--Do not use <container /> only at the endmain element rendered by the given component. We should use it in this component at the beginning and in the end. */}
-      </div>
+        </Container>
+      </section>
     );
   }
 }
 
-export default Search;
+export default withRouter(Search);

@@ -7,6 +7,7 @@ import {settings} from '../../data/dataStore';
 // import {homeContents} from '../../data/dataStore';
 // import {faqContents} from '../../data/dataStore';
 import {infoContents, homeContents, faqContents} from '../../data/dataStore';
+import Search from '../Search/Search';
 
 
 
@@ -22,6 +23,7 @@ class Header extends React.Component {
             <Link to='/' className={styles.logo}>
               <Icon name={icon} />     {/* <---- check later v2*/}
             </Link>
+            <Search />
             <nav>
               <NavLink exact to='/' activeClassName='active'>{homeContents.title}</NavLink>
               <NavLink exact to='/info' activeClassName='active'>{infoContents.title}</NavLink>
