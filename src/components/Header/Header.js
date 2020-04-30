@@ -7,7 +7,7 @@ import {settings} from '../../data/dataStore';
 // import {homeContents} from '../../data/dataStore';
 // import {faqContents} from '../../data/dataStore';
 import {infoContents, homeContents, faqContents} from '../../data/dataStore';
-import Search from '../Search/Search';
+import Search from '../Search/SearchContainer';
 
 
 

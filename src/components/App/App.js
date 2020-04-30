@@ -5,9 +5,9 @@ import FAQ from '../FAQ/FAQ';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
 import MainLayout from '../MainLayout/MainLayout.js';
-import styles from './App/App.scss';
+import styles from './App.scss';
 import List from '../List/ListContainer';
-import SearchResult from '../SearchResult/SearchResultsContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer.js';
 
 const App = () => (
   <BrowserRouter>
@@ -22,7 +22,7 @@ const App = () => (
         <Route exact path='/info' component={Info} />
         <Route exact path='/FAQ' component={FAQ} />
         <Route exact path='/list/:id' component={List} />
-        <Route exact path='/search/:searchString' component={SearchResult} />
+        <Route exact path='/search/:searchString' component={SearchResults} />  {/* '/search/:id      <-- showing all cards*/}
 
       </AnimatedSwitch>
     </MainLayout>

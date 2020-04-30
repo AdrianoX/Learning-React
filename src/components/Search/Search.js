@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container.js';
-import {withRouter} from 'react-router';
+import { withRouter } from 'react-router';
 
 class Search extends React.Component {
   static propTypes = {

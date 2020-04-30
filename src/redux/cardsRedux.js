@@ -6,6 +6,7 @@ export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => car
 export const getCardsForSearch = ({cards}, searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title));
 
 
+
 // action name creator
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
