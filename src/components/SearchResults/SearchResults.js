@@ -1,4 +1,3 @@
-
 import React from 'react';
 import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
@@ -10,6 +9,7 @@ class SearchResults extends React.Component {
   static propTypes = {
     cards: PropTypes.array,
     lists: PropTypes.array,
+    columns: PropTypes.array,
   };
 
   render() {
@@ -17,7 +17,7 @@ class SearchResults extends React.Component {
     return (
       <Container>
         <section className={styles.component}>
-          <h2 className={styles.title}>Search results</h2>
+          <h2 className={styles.title}>Your search results</h2>
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
           ))}

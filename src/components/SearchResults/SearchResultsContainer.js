@@ -5,7 +5,7 @@ import SearchResults from './SearchResults.js';
 
 
 const mapStateToProps = (state, props) => ({
-  cards: getCardsForSearch(state, props.match.params.searchString),   //  <------   match.params.id       ??
+  cards: getCardsForSearch(state, props.match.params.id),   //  <------   match.params.id       ??
   lists: state.lists,
 });
 
@@ -14,3 +14,5 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResults); 
+
+
