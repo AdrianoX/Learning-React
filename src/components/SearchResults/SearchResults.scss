@@ -2,9 +2,9 @@
 
 .component {
   flex-shrink: 0;
-  width: 70%;
+  width: 50%;
   background: $color-light;
-  margin: 30px auto;
+  margin: 20px auto;
   padding: ($base-size * 1.5);
   border-radius: $radius;
   box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);

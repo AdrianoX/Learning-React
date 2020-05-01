@@ -104,13 +104,13 @@ const lists = [
     id: 'list-4',
     title: 'List number two.',
     description: 'Information about list number two',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://i.postimg.cc/wvJfXY6C/13213123123.png',
   },
   {
     id: 'list-3',
     title: 'List number three.',
     description: 'Information about list number three',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://i.postimg.cc/hGtrw0yC/scrum-1.png',
   },
 ];
 

@@ -9,11 +9,16 @@ class Card extends React.Component {
   };
 
   render() {
+
     return (
       <section className={styles.component}>
         <span>{this.props.title}</span>
+
       </section>
     );
   }
 }
 export default Card;
+
+
+

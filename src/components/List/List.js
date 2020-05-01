@@ -13,7 +13,7 @@ class List extends React.Component {
 //     columns: this.props.columns || [],
 //   };
   static propTypes = {
-    title: PropTypes.node.isRequired,
+    title: PropTypes.node,
     description: PropTypes.node,
     columns: PropTypes.array,
     addColumn: PropTypes.func,
