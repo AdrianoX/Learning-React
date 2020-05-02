@@ -24,7 +24,7 @@ class Header extends React.Component {
         <header className={styles.component}>
           <Container>
             <div className={styles.wrapper}>
-              <Link to='/' className={styles.logo}>
+              <Link className={styles.logo} to='/'>
                 <Icon name={icon} />     {/* <---- check later v2*/}
               </Link>
               <Search />

@@ -102,14 +102,14 @@ const lists = [
   },
   {
     id: 'list-4',
-    title: 'List number two.',
-    description: 'Information about list number two',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'Information about other things to do !',
     image: 'https://i.postimg.cc/wvJfXY6C/13213123123.png',
   },
   {
     id: 'list-3',
-    title: 'List number three.',
-    description: 'Information about list number three',
+    title: 'Things that can <sup>wait!</sup>',
+    description: 'Information about less important things !',
     image: 'https://i.postimg.cc/hGtrw0yC/scrum-1.png',
   },
 ];
@@ -135,9 +135,21 @@ const columns = [
   },
   {
     id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    listId: 'list-4',
+    title: 'Travel',
+    icon: 'car',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-4',
+    title: 'Going to buy',
+    icon: 'shopping-basket',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-4',
+    title: 'Meeting',
+    icon: 'handshake',
   },
 ];
 
@@ -171,6 +183,31 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'New York',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Brasil',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-5',
+    title: 'Laptop',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-5',
+    title: 'Jacket',
+  },
+  {
+    id: 'card-11',
+    columnId: 'column-6',
+    title: 'Susan & Jack',
   },
 ];
 

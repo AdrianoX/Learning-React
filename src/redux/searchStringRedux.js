@@ -1,11 +1,8 @@
 // import shortid from 'shortid';
 
 // selectors
-
 export const getSearchString = ({searchString}) => searchString;
-
 export const countVisibleCards = ({cards, searchString})  => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).lenght;
-
 export const countAllCards = ({cards})  => cards.lenght;
 
 // action name creator

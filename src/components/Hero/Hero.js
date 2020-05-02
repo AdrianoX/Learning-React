@@ -12,8 +12,8 @@ const Hero = props => (
 );
 
 Hero.propTypes = {
-  titleText: PropTypes,   // <---- .node.isRequired ?
-  image: PropTypes.node,
+  titleText: PropTypes.node,   // <---- .node.isRequired ?
+  image: PropTypes.node,   // <----- PropTypes.string ?
 };
 
 
