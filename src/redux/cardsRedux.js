@@ -5,7 +5,7 @@ import shortid from 'shortid';
 export const getCardsForColumn = ({ cards }, columnId) => cards.filter(card => card.columnId == columnId); // <--- removing a code fragment, responsible for filtering cards according to the searched phrase
 export const getCardsForSearch = ({ cards, columns, lists} , searchString) => cards.filter(card => new RegExp(searchString, 'i').test(card.title)).map(card => ({
   ...card,
-  listId: lists.find(list => list.id === columns.find(col => col.id === card.columnId).id).title,
+  listId: lists.find(list => list.id === columns.find(col => col.id === card.columnId).listId).id,
 }));
 
 
