@@ -19,13 +19,13 @@ class Header extends React.Component {
     }
 
     render() {
-      const {icon} = settings.header;       /* <----- check later with notepad notes*/
+      const {icon} = settings.header;    
       return (
         <header className={styles.component}>
           <Container>
             <div className={styles.wrapper}>
               <Link className={styles.logo} to='/'>
-                <Icon name={icon} />     {/* <---- check later v2*/}
+                <Icon name={icon} />     
               </Link>
               <Search />
               <nav>
