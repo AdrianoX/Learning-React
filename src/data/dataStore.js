@@ -11,7 +11,7 @@ export const settings = {
     icon: 'search',
   },
 
-  header: {          /* <----  Correct saving of state? or try different one ? */
+  header: {          
     icon: 'robot',
   },
 
