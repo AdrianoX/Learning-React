@@ -4,8 +4,6 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
-// import {homeContents} from '../../data/dataStore';
-// import {faqContents} from '../../data/dataStore';
 import {infoContents, homeContents, faqContents} from '../../data/dataStore';
 import Search from '../Search/SearchContainer';
 import PropTypes from 'prop-types';
