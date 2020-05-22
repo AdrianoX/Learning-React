@@ -9,7 +9,6 @@ import Search from '../Search/SearchContainer';
 import PropTypes from 'prop-types';
 
 
-
 class Header extends React.Component {
     static propTypes = {
       to: PropTypes.node,

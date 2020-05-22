@@ -3,7 +3,6 @@ import List from './List';
 import {getColumnsForList, createActionAddColumn} from '../../redux/columnsRedux';
 
 
-
 const mapStateToProps = (state, props) => {
   const id = props.match.params.id;
   const filteredLists = state.lists.filter(list => list.id == id);

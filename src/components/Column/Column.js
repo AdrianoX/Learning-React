@@ -7,7 +7,6 @@ import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';  
 
 
-
 class Column extends React.Component {
 
 
@@ -47,5 +46,3 @@ class Column extends React.Component {
 }
 
 export default Column;
-
-
