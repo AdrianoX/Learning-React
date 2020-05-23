@@ -8,8 +8,6 @@ export const getCardsForSearch = ({ cards, columns, lists} , searchString) => ca
   listId: lists.find(list => list.id === columns.find(col => col.id === card.columnId).listId).id,
 }));
 
-
-
 // action name creator
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;
