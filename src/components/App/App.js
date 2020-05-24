@@ -27,7 +27,6 @@ const App = () => (
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
-
 );
 
 export default App;
