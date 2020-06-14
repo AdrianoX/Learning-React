@@ -6,7 +6,6 @@ export const countVisibleCards = ({cards, searchString})  => cards.filter(card =
 export const countAllCards = ({cards})  => cards.lenght;
 
 // action name creator
-
 const reducerName = 'search';
 const createActionName = name => `app/${reducerName}/${name}`;
 
