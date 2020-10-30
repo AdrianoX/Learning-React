@@ -7,6 +7,7 @@ import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 import Container from '../Container/Container.js';
+// import Card from '../Card/Card.js';
 
 class List extends React.Component {
 
