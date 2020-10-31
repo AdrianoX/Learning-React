@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './SearchResults.scss';
 import Card from '../Card/Card';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // CL ?
 import Container from '../Container/Container';
 
 const SearchResults = ({ cards }) => {

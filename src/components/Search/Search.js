@@ -6,6 +6,8 @@ import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container.js';
 import { withRouter } from 'react-router';
+// import {Link} from 'react-router-dom';
+
 
 class Search extends React.Component {
   static propTypes = {
